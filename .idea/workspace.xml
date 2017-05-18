@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77d35377-7993-4fcd-9240-5ada0178368b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/pages/loadMeasure.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/pages/saveMeasure.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/queries/loadMeasure.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database.php" afterPath="$PROJECT_DIR$/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/pages/saveMeasure.js" afterPath="$PROJECT_DIR$/js/pages/saveMeasure.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/queries/saveMeasure.php" afterPath="$PROJECT_DIR$/queries/saveMeasure.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,25 +31,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="saveMeasure.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="saveMeasure.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/pages/saveMeasure.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="119">
+              <caret line="7" column="62" lean-forward="false" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="saveMeasure.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="saveMeasure.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/queries/saveMeasure.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="444">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
-                <marker date="1495124881978" expanded="true" signature="274:319" ph="SELECT * FRO... Items" />
-                <marker date="1495124881978" expanded="true" signature="357:384" ph="insert into measure... " />
-                <marker date="1495124881978" expanded="true" signature="357:386" ph="insert into measure... " />
+                <marker date="1495125042475" expanded="true" signature="274:319" ph="SELECT * FRO... Items" />
+                <marker date="1495125042475" expanded="true" signature="357:384" ph="insert into measure... " />
+                <marker date="1495125042475" expanded="true" signature="357:386" ph="insert into measure... " />
               </folding>
             </state>
           </provider>
@@ -138,8 +133,8 @@
         <option value="$PROJECT_DIR$/js/pages/loadMeasure.js" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/js/pages/saveMeasure.js" />
         <option value="$PROJECT_DIR$/queries/saveMeasure.php" />
+        <option value="$PROJECT_DIR$/js/pages/saveMeasure.js" />
       </list>
     </option>
   </component>
@@ -348,12 +343,12 @@
       <workItem from="1491403897028" duration="1804000" />
       <workItem from="1491621860848" duration="2385000" />
       <workItem from="1494641487363" duration="19111000" />
-      <workItem from="1495063694658" duration="11550000" />
+      <workItem from="1495063694658" duration="11790000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36876000" />
+    <option name="totallyTimeSpent" value="37116000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -573,23 +568,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/pages/saveMeasure.js">
+    <entry file="file://$PROJECT_DIR$/queries/saveMeasure.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="444">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <marker date="1495125042475" expanded="true" signature="274:319" ph="SELECT * FRO... Items" />
+            <marker date="1495125042475" expanded="true" signature="357:384" ph="insert into measure... " />
+            <marker date="1495125042475" expanded="true" signature="357:386" ph="insert into measure... " />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/queries/saveMeasure.php">
+    <entry file="file://$PROJECT_DIR$/js/pages/saveMeasure.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <marker date="1495124881978" expanded="true" signature="274:319" ph="SELECT * FRO... Items" />
-            <marker date="1495124881978" expanded="true" signature="357:384" ph="insert into measure... " />
-            <marker date="1495124881978" expanded="true" signature="357:386" ph="insert into measure... " />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="62" lean-forward="false" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
