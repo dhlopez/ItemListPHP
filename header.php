@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="css/custom.css">
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!--ajax calls-->
+    <script src="js/pages/loadMeasure.js"></script>
+    <script src="js/pages/saveMeasure.js"></script>
 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">

@@ -12,7 +12,10 @@ $dbname = "itemslist";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
+
+
 $sql = "SELECT * FROM Items";
+$result = $conn->query($sql);
 
 // Check connection
 if ($conn->connect_error) {
@@ -20,6 +23,14 @@ if ($conn->connect_error) {
 }
 echo "Connected successfully";
 
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Desc: " . $row["description"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
 
 $conn->close();
 ?>
