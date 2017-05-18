@@ -1,6 +1,10 @@
 footer {
     padding-top: 50px;
     padding-bottom: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 i{
@@ -8,6 +12,9 @@ i{
     height: 35px;
     font-size: 20pt;
 }
+
+
+
 .newItem {
     width: 100%;
     display:inline-block;
