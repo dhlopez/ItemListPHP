@@ -9,6 +9,8 @@
     <!--ajax calls-->
     <script src="js/pages/loadMeasure.js"></script>
     <script src="js/pages/saveMeasure.js"></script>
+    <script src="js/pages/loadItem.js"></script>
+    <script src="js/pages/saveItem.js"></script>
 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">

@@ -3,8 +3,8 @@
  */
 
 $(document).ready(function() {
-    $("#btnSaveItem").click(function() {
-        var mesDesc = $("#txtNewItem").val();
+    $("#btnSaveMeasure").click(function() {
+        var mesDesc = $("#txtNewMeasure").val();
         $.post("queries/saveMeasure.php", {mesDesc: mesDesc});
     });
 });

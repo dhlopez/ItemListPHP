@@ -16,7 +16,11 @@ echo "My first PHP script!";
 
         <div class="col-xs-12 col-md-6">
             <select class="form-control" id="selectMeasure">
-                <option value="-1">Please select Measure</option>
+            </select>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <select class="form-control" id="selectItem">
+                <option value="-1">Please select an Item</option>
             </select>
         </div>
 
@@ -56,12 +60,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="row">
                     <div class="newItem col-xs-12 form-group">
                         <label class="control-label">Description</label>
-                        <input type="text" class="form-control" placeholder="Please enter a Description">
+                        <input type="text" class="form-control" placeholder="Please enter a Description" id="txtNewItem">
                     </div>
                     <div class="newItem col-xs-12 form-group">
                         <label class="control-label">Default Measure</label>
-                        <select class="form-control">
-                            <option value="1">Milk</option>
+                        <select class="form-control" id="selectExistingMeasure">
                         </select>
                     </div>
                 </div>
@@ -69,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save Item</button>
+                <button type="button" class="btn btn-primary" id="btnSaveItem">Save Item</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -86,14 +89,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="row">
                     <div class="newItem col-xs-12 form-group">
                         <label class="control-label">Measure</label>
-                        <input type="text" class="form-control" placeholder="Ex. Kilo, Bag, Box, etc." id="txtNewItem">
+                        <input type="text" class="form-control" placeholder="Ex. Kilo, Bag, Box, etc." id="txtNewMeasure">
                     </div>
                 </div>
 
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="btnSaveItem">Save Item</button>
+                <button type="button" class="btn btn-primary" id="btnSaveMeasure">Save Measure</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
