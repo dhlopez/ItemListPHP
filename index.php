@@ -6,31 +6,43 @@
 ?>
 
 <body>
-<?php
-echo "My first PHP script!";
-?>
 <div class="container content">
     <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-        Name: <input type="text" name="fname" id="txtfname">
-        <input type="submit" class="btn btn-success">
+        <!--Name: <input type="text" name="fname" id="txtfname">
+        <input type="submit" class="btn btn-success">-->
+        <div class="row">
+            <div class="col-xs-12 col-md-4 form-group">
+                <label for="selectItem">
+                    Item
+                </label>
+                <select class="form-control" id="selectItem">
+                    <option value="-1">Please select an Item</option>
+                </select>
+            </div>
+            <div class="col-xs-12 col-md-4 form-group">
+                <label for="txtQty">
+                    Quantity
+                </label>
+                <input class="form-control" type="text" id="txtQty"/>
+            </div>
+            <div class="col-xs-12 col-md-4 form-group">
+                <label for="selectMeasure">
+                    Measure
+                </label>
+                <select class="form-control" id="selectMeasure">
+                </select>
+            </div>
+            <i class="fa fa-plus-square fa-2x pull-right" aria-hidden="true"></i>
+            <i class="fa fa-trash fa-2x pull-right" aria-hidden="true"></i>
 
-        <div class="col-xs-12 col-md-6">
-            <select class="form-control" id="selectMeasure">
-            </select>
         </div>
-        <div class="col-xs-12 col-md-6">
-            <select class="form-control" id="selectItem">
-                <option value="-1">Please select an Item</option>
-            </select>
-        </div>
-
     </form>
 
     <!-- Buttons trigger for modals -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newMeasure">
+    <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#newMeasure">
         New Measure
     </button>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newItem">
+    <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#newItem">
         New Item
     </button>
 

@@ -33,8 +33,8 @@
                             <li><a href="#">Page 1-3</a></li>
                         </ul>
                     </li>
-                    <li><a href="item.php">Add Item</a></li>
-                    <li><a href="measure.php">Add Measure</a></li>
+                    <!--<li><a href="item.php">Add Item</a></li>
+                    <li><a href="measure.php">Add Measure</a></li>-->
                     <li><a href="#">Add User</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
