@@ -7,6 +7,23 @@
 
 <body>
 <div class="container content">
+    <!-- Buttons trigger for modals -->
+    <div class="row">
+
+        <div class="col-xs-12 col-md-12 form-group">
+            List for <?php
+                $mydate=getdate(date("U"));
+                echo "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
+            ?>
+            <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#newMeasure">
+                New Measure
+            </button>
+            <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#newItem">
+                New Item
+            </button>
+        </div>
+    </div>
+
     <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
         <!--Name: <input type="text" name="fname" id="txtfname">
         <input type="submit" class="btn btn-success">-->
@@ -32,32 +49,35 @@
                 <select class="form-control" id="selectMeasure">
                 </select>
             </div>
-            <i class="fa fa-plus-square fa-2x pull-right" aria-hidden="true"></i>
-            <i class="fa fa-trash fa-2x pull-right" aria-hidden="true"></i>
 
         </div>
+        <div class="row btn-toolbar text-right col-xs-12">
+            <div class="col-xs-9"></div>
+            <div class="col-xs-1">
+                <button class="btn btn-danger">
+                    <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1">
+                <button class="btn btn-warning">
+                    <i class="fa fa-plus-square fa-2x" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
     </form>
-
-    <!-- Buttons trigger for modals -->
-    <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#newMeasure">
-        New Measure
-    </button>
-    <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#newItem">
-        New Item
-    </button>
-
 </div>
 
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // collect value of input field
-    $name = $_POST['fname'];
+    /*$name = $_POST['fname'];
     if (empty($name)) {
         echo "Name is empty";
     } else {
         echo $name;
-    }
+    }*/
 }
 ?>
 
