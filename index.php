@@ -15,6 +15,11 @@
                 $mydate=getdate(date("U"));
                 echo "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
             ?>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-12 form-group">
             <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#newMeasure">
                 New Measure
             </button>
@@ -49,19 +54,14 @@
                 <select class="form-control" id="selectMeasure">
                 </select>
             </div>
-
         </div>
-        <div class="row btn-toolbar text-right col-xs-12">
-            <div class="col-xs-9"></div>
-            <div class="col-xs-1">
+        <div class="row pull-right">
+            <div class="col-xs-12">
                 <button class="btn btn-danger">
-                    <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-trash fa-2x sml" aria-hidden="true"></i>
                 </button>
-            </div>
-            <div class="col-xs-1"></div>
-            <div class="col-xs-1">
                 <button class="btn btn-warning">
-                    <i class="fa fa-plus-square fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-plus-square fa-2x sml" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
