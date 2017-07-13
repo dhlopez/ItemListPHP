@@ -16,19 +16,22 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 //$sql = "insert into measure(mesDesc) values(:mesDesc)";
 $stmt = $conn->prepare("INSERT INTO items(itemDesc, measureid) VALUES(?,?)");
-
 $stmt->bind_param("sd", $itemDesc, $measureid);
 $itemDesc = $_POST['itemDesc'];
 $measureid = $_POST['measureid'];
 
-$stmt->execute();
-//$result = $conn->query($sql);
-
-// Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    echo("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully";
+else if($stmt->execute())
+{
+    echo "Record Inserted";
+}
+else
+{
+    echo "Record Not Inserted";
+}
+//$result = $conn->query($sql);
 
 $conn->close();
 ?>

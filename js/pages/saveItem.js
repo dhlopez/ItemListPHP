@@ -3,9 +3,27 @@
  */
 
 $(document).ready(function() {
+    function displayMessage(div, message)
+    {
+        console.info("inside displayMessage");
+        $(div).text(message);
+    }
     $("#btnSaveItem").click(function() {
         var itemDesc = $("#txtNewItem").val();
         var measureid = $("#selectExistingMeasure").val();
-        $.post("queries/saveItem.php", {itemDesc: itemDesc, measureid:measureid});
+        $.ajax({
+            url: "queries/saveItem.php",  type: "POST", data: {itemDesc: itemDesc, measureid: measureid}, success: function (data) {
+                console.info(data);
+                if (data == "Record Inserted") {
+                    displayMessage('#itemMessage', 'Success');
+                    console.log("Success!");
+                }
+                else {
+                    displayMessage('#itemMessage', 'Fail');
+                    console.log("fail!");
+                }
+            }
+        });
     });
 });
+
