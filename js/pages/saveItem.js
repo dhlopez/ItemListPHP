@@ -5,7 +5,6 @@
 $(document).ready(function() {
     function displayMessage(div, message)
     {
-        console.info("inside displayMessage");
         $(div).text(message);
     }
     $("#btnSaveItem").click(function() {

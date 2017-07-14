@@ -125,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <input type="text" class="form-control" placeholder="Ex. Kilo, Bag, Box, etc." id="txtNewMeasure">
                     </div>
                 </div>
-
+                <div id="measureMessage"></div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

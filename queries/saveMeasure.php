@@ -20,14 +20,17 @@ $stmt = $conn->prepare("INSERT INTO measure(mesDesc) VALUES(?)");
 $stmt->bind_param("s", $mesDesc);
 $mesDesc = $_POST['mesDesc'];
 
-$stmt->execute();
-//$result = $conn->query($sql);
-
-// Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    echo("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully";
+else if($stmt->execute())
+{
+    echo "Record Inserted";
+}
+else
+{
+    echo "Record Not Inserted";
+}
 
 $conn->close();
 ?>
