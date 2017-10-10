@@ -63,6 +63,9 @@
                 <button class="btn btn-warning">
                     <i class="fa fa-plus-square fa-2x sml" aria-hidden="true"></i>
                 </button>
+                <button type="button" class="btn btn-primary pull-right" id="btnSaveListItem">
+                    Save List Item
+                </button>
             </div>
         </div>
     </form>

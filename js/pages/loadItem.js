@@ -4,5 +4,5 @@
 
 $.post( "queries/loadItem.php", function( data ) {
     $( "#selectItem" ).append( data );
-    //console.info(data);
+    console.info(data);
 });

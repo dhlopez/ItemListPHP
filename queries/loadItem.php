@@ -27,7 +27,7 @@ if ($result->num_rows > 0) {
 
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<option value='".$row["id"]."' measureId='".$row["measureid"]."'>". $row["itemDesc"]."</option>";
+        echo "<option value='".$row["id"]."'>". $row["itemDesc"]."</option>";//."' measureId='".$row["measureid"]
         //echo "id: " . $row["id"]. " - Desc: " . $row["mesDesc"]. "<br>";
     }
 } else {
