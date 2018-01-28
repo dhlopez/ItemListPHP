@@ -21,6 +21,9 @@ $(document).ready(function() {
                 else {
                     displayMessage('#itemMessage', 'Fail');
                     console.log("fail!");
+                    console.log(itemID);
+                    console.log(itemQty);
+                    console.log(measureID);
                 }
             }
         });

@@ -3,6 +3,10 @@
 <?php
     include 'header.php';
     include 'database.php';
+    if(!isset($_SESSION['login_user']))
+    {
+        header("location: login.php");
+    }
 ?>
 
 <body>

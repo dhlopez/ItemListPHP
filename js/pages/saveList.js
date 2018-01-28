@@ -7,7 +7,7 @@ $(document).ready(function() {
     {
         //$(div).text(message);
     }
-    $("#btnSaveItem").click(function() {
+    $("#btnSaveItemZZ").click(function() {
         var itemDesc = $("#txtNewItem").val();
         var measureid = $("#selectExistingMeasure").val();
         $.ajax({

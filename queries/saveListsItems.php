@@ -17,7 +17,9 @@ $measureID = (is_numeric($_POST['measureID']) ? (int)$_POST['measureID'] : 0);
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 //$sql = "insert into item list";
-$stmt = $conn->prepare("INSERT INTO listsitems(listid, qty, lineNo, measureid, itemid) VALUES(3,?,1,?,?)");
+$sql = 'CALL CreateListAndListItems()';
+//$stmt = $conn->prepare("INSERT INTO listsitems(listid, qty, lineNo, measureid, itemid) VALUES(5,?,1,?,?)");
+$stmt = $conn->prepare($sql);
 $stmt->bind_param("iii", $itemQty, $measureID, $itemID);
 
 // Check connection
