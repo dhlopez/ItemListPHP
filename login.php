@@ -9,24 +9,31 @@
  */
     include 'header.php';
     include 'database.php';
+    include 'loginScript.php';
+
+    if(isset($_SESSION['login_user'])){
+        echo 'login_user created';
+        header("location: index.php");
+    }
 ?>
 
 <body>
     <h2>Login Form</h2>
     <div class="col-xs-11 loginForm col-centered container-fluid">
-        <form action="/action_page.php" >
+        <form action="" method="post" >
             <div class="imgcontainer">
                 <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
             </div>
 
             <div class="container">
                 <label><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
+                <input type="text" placeholder="Enter Username" name="username" required>
 
                 <label><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="password" placeholder="Enter Password" name="password" required>
 
-                <button type="submit" class="login">Login</button>
+                <!---button name="submit" class="login" value=" Login ">Login</button>-->
+                <input type="submit" name="submit"  class="login" value=" Login ">Login</input>
                 <input type="checkbox" checked="checked"> Remember me
             </div>
 

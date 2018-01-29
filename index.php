@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <?php
+    session_start();
+    //session_destroy();
     include 'header.php';
     include 'database.php';
+
     if(!isset($_SESSION['login_user']))
     {
         header("location: login.php");
     }
+    echo ("{$_SESSION['login_user']}");
 ?>
 
 <body>
